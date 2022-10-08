@@ -1,11 +1,21 @@
 body {
   font-family: sans-serif;
+  //font-size: 1.5em;
+}
+
+.page-container {
+  position: relative;
+  min-height: 98vh;
 }
 
 header {
   display: flex;
   align-items: center;
   padding: 0 2% 0 2%;
+}
+
+button {
+  //font-size: inherit;
 }
 
 .disabled {
@@ -68,26 +78,35 @@ header {
   gap: 0 5px;
 }
 
-.translate-menu > * {
-  //border: 1px dotted red;
+.lang-options {
+  display: flex;
+  gap: 0 10px;
 }
 
-.translate-menu .lang-select-button {
-  border: none;
-  background: none;
-  min-height: 30px;
-  border-bottom: 2px solid white;
-  padding: 10px;
+.lang {
+  padding: 14px 10px 10px 10px ;
+  display: none;
 }
 
-.translate-menu .lang-select-button:hover {
-  background: lightgray;
-  border-bottom: 2px solid blue;
-  color: blue;
+.lang.selected {
+  display: block;
 }
 
 .lang-swap {
   display: flex;
+  padding: 6px;
+}
+
+#dest-lang div.lang {
+  position: relative;
+  left: -20px;
+}
+
+.swap-button {
+  display: flex;
+  align-content: center;
+  border: none;
+  border-radius: 50%;
   padding: 4px;
 }
 
@@ -110,13 +129,24 @@ header {
 }
 
 .translate-box {
+  flex: 1;
   display: flex;
   flex-grow: 1;
-  padding: 10px;
+  padding: 20px;
 }
+
+.placeholder {
+  color: gray;
+}
+
 .translate-box#dest-lang {
   border-left: 1px solid lightgray;
 }
+
+.dest-lang-output {
+  padding-left: 8px;
+}
+
 
 .translate-box textarea {
   flex-grow: 1;
@@ -130,4 +160,27 @@ header {
   margin-top: 20px;
   margin-right: 20px;
   align-self: flex-end;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3em;
+  font-size: 0.8em;
+}
+
+
+.credits {
+  display: flex;
+  gap: 0 10px;
+  justify-content: center;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
 }

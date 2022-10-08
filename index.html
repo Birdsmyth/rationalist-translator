@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <link rel="stylesheet" href="styles.css">
 <style media="screen">
 
@@ -8,54 +10,64 @@
 </style>
 </head>
 <body>
-  <header>
-    <div class="header-left">
-      <div class="menu-button disabled" id="menu-extras">
-        <span>extras</span>
+  <div class="page-container">
+    <header>
+      <div class="header-left">
+        <div class="menu-button disabled" id="menu-extras">
+          <span>extras</span>
+        </div>
+        <h1>Rationalist Translation Service<h1>
       </div>
-      <h1>Rationalist Translation Service<h1>
+      <div class="header-pad"></div>
+      <div class="header-right">
+        <div class="menu-button disabled" id="menu-apps">
+          <span>apps</span>
+        </div>
+        <div class="menu-button disabled" id="menu-account">
+          <span>account</span>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="band"></div>
+      <div class="translate-container">
+        <div class="type-menu">
+          <button class="disabled" type="button" name="text">Text</button>
+          <button class="disabled" type="button" name="doc">Documents</button>
+          <button class="disabled" type="button" name="web">Web</button>
+        </div>
+        <div class="translate-menu">
+          <div class="lang-options" id="source-lang">
+            <div class="lang selected" id="lang-eng">Irrational</div>
+            <div class="lang" id="lang-rat">Rational</div>
+          </div>
+          <div class="lang-swap">
+            <button class="swap-button" type="button" name="swap-lang">
+              <span class="material-symbols-outlined">swap_horiz</span>
+            </button>
+          </div>
+          <div class="lang-options" id="dest-lang">
+            <div class="lang" id="lang-eng">Irrational</div>
+            <div class="lang selected" id="lang-rat">Rational</div>
+          </div>
+        </div>
+        <div class="translate-area">
+          <div class="translate-box" id="source-lang">
+            <textarea class="source-lang-input"></textarea>
+          </div>
+          <div class="translate-box" id="dest-lang">
+            <div class="dest-lang-output placeholder">Translation</div>
+          </div>
+        </div>
+        <button id="translate-button" type="button" name="translate">Translate</button>
+      </div>
     </div>
-    <div class="header-pad"></div>
-    <div class="header-right">
-      <div class="menu-button disabled" id="menu-apps">
-        <span>apps</span>
+    <footer>
+      <div class="credits">
+        <span>Research and Translation by Sami Petersen</span>
+        <span>Programming by Adash H-Moller</span>
       </div>
-      <div class="menu-button disabled" id="menu-account">
-        <span>account</span>
-      </div>
-    </div>
-  </header>
-  <div class="main">
-    <div class="band"></div>
-    <div class="translate-container">
-      <div class="type-menu">
-        <button class="disabled" type="button" name="text">Text</button>
-        <button class="disabled" type="button" name="doc">Documents</button>
-        <button class="disabled" type="button" name="web">Web</button>
-      </div>
-      <div class="translate-menu">
-        <div class="lang-options" id="source-lang">
-          <button class="lang-select-button" type="button" name="lang-eng">English</button>
-          <button class="lang-select-button" type="button" name="lang-rat">Rationalist</button>
-        </div>
-        <div class="lang-swap">
-          <button class="swap-button" type="button" name="swap-lang">swap</button>
-        </div>
-        <div class="lang-options" id="dest-lang">
-          <button class="lang-select-button" type="button" name="lang-eng">English</button>
-          <button class="lang-select-button" type="button" name="lang-rat">Rationalist</button>
-        </div>
-      </div>
-      <div class="translate-area">
-        <div class="translate-box" id="source-lang">
-          <textarea name="source-lang-input"></textarea>
-        </div>
-        <div class="translate-box" id="dest-lang">
-          <textarea name="dest-lang-input" placeholder="Translation"></textarea>
-        </div>
-      </div>
-      <button id="translate-button" type="button" name="translate">Translate</button>
-    </div>
+    </footer>
   </div>
 </body>
 </html>
