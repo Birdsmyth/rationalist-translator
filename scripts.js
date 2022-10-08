@@ -18,6 +18,7 @@ $(document).ready(function(){
     outBox.text(output);
     outBox.removeClass("placeholder");
   })
+  console.log("setup complete");
 });
 
 // this function does the translation
