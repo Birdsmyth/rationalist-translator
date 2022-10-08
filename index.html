@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<style media="screen">
+
+
+</style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <div class="menu-button disabled" id="menu-extras">
+        <span>extras</span>
+      </div>
+      <h1>Rationalist Translation Service<h1>
+    </div>
+    <div class="header-pad"></div>
+    <div class="header-right">
+      <div class="menu-button disabled" id="menu-apps">
+        <span>apps</span>
+      </div>
+      <div class="menu-button disabled" id="menu-account">
+        <span>account</span>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+    <div class="band"></div>
+    <div class="translate-container">
+      <div class="type-menu">
+        <button class="disabled" type="button" name="text">Text</button>
+        <button class="disabled" type="button" name="doc">Documents</button>
+        <button class="disabled" type="button" name="web">Web</button>
+      </div>
+      <div class="translate-menu">
+        <div class="lang-options" id="source-lang">
+          <button class="lang-select-button" type="button" name="lang-eng">English</button>
+          <button class="lang-select-button" type="button" name="lang-rat">Rationalist</button>
+        </div>
+        <div class="lang-swap">
+          <button class="swap-button" type="button" name="swap-lang">swap</button>
+        </div>
+        <div class="lang-options" id="dest-lang">
+          <button class="lang-select-button" type="button" name="lang-eng">English</button>
+          <button class="lang-select-button" type="button" name="lang-rat">Rationalist</button>
+        </div>
+      </div>
+      <div class="translate-area">
+        <div class="translate-box" id="source-lang">
+          <textarea name="source-lang-input"></textarea>
+        </div>
+        <div class="translate-box" id="dest-lang">
+          <textarea name="dest-lang-input" placeholder="Translation"></textarea>
+        </div>
+      </div>
+      <button id="translate-button" type="button" name="translate">Translate</button>
+    </div>
+  </div>
+</body>
+</html>

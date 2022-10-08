@@ -1,0 +1,133 @@
+body {
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0 2% 0 2%;
+}
+
+.disabled {
+  display: none;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0px 10px;
+}
+
+.header-pad {
+  flex-grow: 1;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0px 10px;
+}
+
+.band {
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: gray;
+  border-width: 0.8px;
+  background-color: lightgray;
+  height: 100px;
+  width: 100%;
+  margin-bottom: -80px;
+}
+
+.translate-container {
+  margin-left: 20%;
+  width: auto;
+  margin: auto;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.type-menu {
+  display: flex;
+  gap: 0 10px;
+  margin-bottom: 10px;
+}
+
+.type-menu button {
+  padding: 10px;
+}
+
+.translate-menu {
+  display: flex;
+  background-color: white;
+  border-style: solid;
+  border-color: lightgray;
+  border-width: 1px;
+  border-radius: 10px 10px 0 0;
+  gap: 0 5px;
+}
+
+.translate-menu > * {
+  //border: 1px dotted red;
+}
+
+.translate-menu .lang-select-button {
+  border: none;
+  background: none;
+  min-height: 30px;
+  border-bottom: 2px solid white;
+  padding: 10px;
+}
+
+.translate-menu .lang-select-button:hover {
+  background: lightgray;
+  border-bottom: 2px solid blue;
+  color: blue;
+}
+
+.lang-swap {
+  display: flex;
+  padding: 4px;
+}
+
+.lang-options {
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.translate-area {
+  display: flex;
+  margin-top: -1px;
+
+  background-color: white;
+  border-style: solid;
+  border-color: lightgray;
+  border-width: 1px;
+  border-radius: 0 0 10px 10px;
+
+  min-height: 180px;
+}
+
+.translate-box {
+  display: flex;
+  flex-grow: 1;
+  padding: 10px;
+}
+.translate-box#dest-lang {
+  border-left: 1px solid lightgray;
+}
+
+.translate-box textarea {
+  flex-grow: 1;
+  resize: none;
+  border: none;
+}
+
+#translate-button {
+  width: 120px;
+  height: 30px;
+  margin-top: 20px;
+  margin-right: 20px;
+  align-self: flex-end;
+}
