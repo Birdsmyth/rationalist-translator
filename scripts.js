@@ -63,8 +63,8 @@ const engToRatMap = new Map([
   ["credible signal", "costly signal"],
   ["go-getting", "agentic"],
   ["ten times", "an order of magnitude"],
-  [/\bher\b/, "my model of her"],
-  [/\bhim\b/, "my model of him"],
+  [/\bher\b/g, "my model of her"],
+  [/\bhim\b/g, "my model of him"],
   ["them", "my models of them"]
 ]);
 
